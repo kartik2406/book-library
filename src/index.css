@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import "../node_modules/my-style-css/dist/index.css";
+@import "./select.css";
+
+.card__body {
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card__body .book-fields {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+}
+
+.sort-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.add-to-cart {
+  align-self: flex-end;
+  border-radius: 50%;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.checkout-item {
+  align-items: center;
 }
